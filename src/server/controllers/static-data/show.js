@@ -265,7 +265,18 @@ const SHOW_DATA = [{
     cover: 'free',
     state: 'GA',
     time: '8:30pm - 9:30pm'
-}];
+},
+{
+    date: '2022-04-22T18:00:00',
+    venueName: "Amplify Decatur @ Leon's Full Service Outdoor Stage (w/ Mermaid Motor Lounge)",
+    venueUrl: 'https://www.amplifydecatur.org/',
+    city: 'Decatur',
+    cover: 'free',
+    state: 'GA',
+    ticketUrl: 'https://www.amplifydecatur.org/#fridaySunday',
+    time: '6pm - 8pm'
+}
+];
 
 const DATE_FORMAT = 'YYYY-MM-DDThh:mm:ss';
 
