@@ -201,5 +201,12 @@
   "venueUrl": "https://littletreeartstudios.com/music-studios/",
   "city": "Avondale Estates",
   "state": "GA"
+},
+{
+  "date": "2019-04-12T21:00:00-04:00",
+  "venueName": "The Marlay (Amplify Music Festival)",
+  "venueUrl": "https://www.themarlayhouse.com/events",
+  "city": "Decatur",
+  "state": "GA"
 }
 ]
