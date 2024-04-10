@@ -5,7 +5,6 @@ import { EpkSoundcloudPlayer } from './epk-soundcloud-player';
 import { Hero } from '../Hero';
 import { Footer } from '../Footer';
 import { BandGrid } from '../BandGrid';
-import { BookingForm } from '../BookingForm';
 import VideoSection from '../VideoSection';
 
 class EPK extends Component {
@@ -38,7 +37,6 @@ class EPK extends Component {
                     heading="The Bantam Breaks"
                     subHeading="Electronic Press Kit" />
                 <EpkBio />
-                <BookingForm />
                 <EpkSoundcloudPlayer />
                 <BandGrid />
                 <VideoSection />

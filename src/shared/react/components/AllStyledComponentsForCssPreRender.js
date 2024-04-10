@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { AlbumGrid } from './AlbumGrid';
-import { BookingForm } from './BookingForm';
 import { GlobalStyles } from './GlobalStyles';
 import { Hero } from './Hero';
 import { Footer } from './Footer';
@@ -21,7 +20,6 @@ export const AllStyledComponentsForCssPreRender = () => {
             <InstaGrid />
             <VideoSection />
             <BandGrid />
-            <BookingForm />
             <Footer showDesignCredit={true} />
         </Fragment>
     );

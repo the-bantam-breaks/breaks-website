@@ -200,12 +200,12 @@ class Nav extends Component {
                         look="SECONDARY">
                             EPK
                     </ActionLink>
-                    <ActionLink
+                    {/* <ActionLink
                         href={'#contact'}
                         title="Contact"
                         look={this.secondaryOrPrimary('#contact')}>
                         Contact
-                    </ActionLink>
+                    </ActionLink> */}
                 </SiteLinks>
 
             </BreaksNav>

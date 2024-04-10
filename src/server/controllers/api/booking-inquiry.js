@@ -64,9 +64,9 @@ export const bookingInquiry = {
             }
 
             await sendSlackBookingMessage({ email, message, name });
-            process.env.NODE_ENV === 'production'
-                ? sendEmailMessageWithAmazon({ email, message, name })
-                : sendEmailMessageWithGmail({ email, message, name });
+            // process.env.NODE_ENV === 'production'
+            //     ? sendEmailMessageWithAmazon({ email, message, name })
+            //     : sendEmailMessageWithGmail({ email, message, name });
 
             ctx.body = {
                 message: 'Booking inquiry received.'

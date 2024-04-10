@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { AppDataProvider } from '../context';
 import { AlbumGrid } from './AlbumGrid';
-import { BookingForm } from './BookingForm';
 import { Hero } from './Hero';
 import { Footer } from './Footer';
 // import { InstaGrid } from './InstaGrid';
@@ -42,7 +41,6 @@ class Home extends Component {
                 <LiveShows />
                 <VideoSection />
                 <BandGrid />
-                <BookingForm />
                 <Footer showDesignCredit={true} />
             </AppDataProvider>
         );
