@@ -1,56 +1,56 @@
 import {
-    sendToGmail,
-    sendSesMail,
+    // sendToGmail,
+    // sendSesMail,
     sendSlackBookingMessage
 } from '../util';
 
-const BREAKS_GMAIL_ADDRESS = process.env.ENV_BOOOKING_MAIL_ACCOUNT;
+// const BREAKS_GMAIL_ADDRESS = process.env.ENV_BOOOKING_MAIL_ACCOUNT;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const htmlMailMessage = ({ name, email, message }) =>
-    `<p>From: ${name}</p><p>Email: ${email}</p><div>${message}</div>`;
+// const htmlMailMessage = ({ name, email, message }) =>
+//     `<p>From: ${name}</p><p>Email: ${email}</p><div>${message}</div>`;
 
-const mailSubject = ({ name, email }) =>
-    `Web Form Booking inquiry from ${name} / ${email}`;
+// const mailSubject = ({ name, email }) =>
+//     `Web Form Booking inquiry from ${name} / ${email}`;
 
-const textMailMessage = ({ name, email, message }) =>
-    `From: ${name}\nEmail: ${email}\n\n${message}`;
+// const textMailMessage = ({ name, email, message }) =>
+//     `From: ${name}\nEmail: ${email}\n\n${message}`;
 
-const sendEmailMessageWithAmazon = async ({ name, email, message }) => {
-    const amazonMailOptions = {
-        from: BREAKS_GMAIL_ADDRESS,
-        to: BREAKS_GMAIL_ADDRESS,
-        subject: mailSubject({ email, name }),
-        html: htmlMailMessage({ name, email, message }),
-        text: textMailMessage({ name, email, message }),
-        ses: {}
-    };
+// const sendEmailMessageWithAmazon = async ({ name, email, message }) => {
+//     const amazonMailOptions = {
+//         from: BREAKS_GMAIL_ADDRESS,
+//         to: BREAKS_GMAIL_ADDRESS,
+//         subject: mailSubject({ email, name }),
+//         html: htmlMailMessage({ name, email, message }),
+//         text: textMailMessage({ name, email, message }),
+//         ses: {}
+//     };
 
-    return sendSesMail(amazonMailOptions, (err, info) => {
-        if (err) {
-            console.log('Amazon SES send errror', err);
-        } else {
-            console.log('Amazon SES sent', info);
-        }
-    });
-};
+//     return sendSesMail(amazonMailOptions, (err, info) => {
+//         if (err) {
+//             console.log('Amazon SES send errror', err);
+//         } else {
+//             console.log('Amazon SES sent', info);
+//         }
+//     });
+// };
 
-const sendEmailMessageWithGmail = async ({ name, email, message }) => {
-    const gmailOptions = {
-        from: BREAKS_GMAIL_ADDRESS,
-        to: BREAKS_GMAIL_ADDRESS,
-        subject: mailSubject({ email, name }), // Subject line
-        html: htmlMailMessage({ name, email, message })
-    };
+// const sendEmailMessageWithGmail = async ({ name, email, message }) => {
+//     const gmailOptions = {
+//         from: BREAKS_GMAIL_ADDRESS,
+//         to: BREAKS_GMAIL_ADDRESS,
+//         subject: mailSubject({ email, name }), // Subject line
+//         html: htmlMailMessage({ name, email, message })
+//     };
 
-    return sendToGmail(gmailOptions, (err, info) => {
-        if (err) {
-            console.log('Gmail send errror', err);
-        } else {
-            console.log('gmail sent', info);
-        }
-    });
-};
+//     return sendToGmail(gmailOptions, (err, info) => {
+//         if (err) {
+//             console.log('Gmail send errror', err);
+//         } else {
+//             console.log('gmail sent', info);
+//         }
+//     });
+// };
 
 export const bookingInquiry = {
     api: {
