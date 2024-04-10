@@ -277,7 +277,7 @@ const SHOW_DATA = [{
     time: '6pm - 8pm'
 },
 {
-    date: '2024-04-12T21:00:00-04:00',
+    date: '2024-04-12T20:00:00-04:00',
     venueName: 'The Marlay House (Amplify Music Festival)',
     venueUrl: 'https://www.themarlayhouse.com/events',
     city: 'Decatur',
